@@ -1,0 +1,332 @@
+:root {
+  --main-color: #173BEB; 
+  --sec-color: #95F0D2  ;
+  --bg-color: #B8FCFB;
+  --gray: #383838;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet');
+
+
+
+html{
+	margin:0 auto;
+}
+
+body{
+	font-family: "Open Sans", sans-serif;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+.projectBody{
+	background-color: white;
+}
+
+#menuLinks{
+	float: right;
+}
+
+#logoName{
+	float: left;
+}
+
+
+.myLinks{
+	display: inline-block;
+	font-size: 0.8em;
+	color: var(--main-color);
+	margin: 0 1.3em 0 1.3em;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+
+
+
+input[type=checkbox]{
+	display: none;
+}
+
+
+input[type=checkbox]:checked ~ #menuLinks{
+	display: block;
+}
+
+.show-menu {
+	font-size: 0.8em;
+	color: var(--main-color);
+	margin: 0 1.3em 2em 1.3em;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 3px;
+    display: none;
+}
+
+.myLinks:hover{
+	transition:all 0.3s ease;
+	color: var(--sec-color);
+}
+
+.currentPage{
+	color: var(--sec-color);
+}
+.myBio{
+	margin-top: 5em;
+}
+
+.rectangle{
+	width: 50em;
+	height: 5em;
+	position: absolute;
+	color: blue;
+}
+
+.myIntro{
+	font-size: 3em;
+	color: var(--main-color);
+	letter-spacing: 2px;
+	margin:0;
+}
+
+.myBioText{
+	font-size: 1.5em;
+	font-family: "Source Serif Pro", serif;
+	max-width: 40%;
+	line-height: 1.4em;
+	letter-spacing: 1px;
+	font-weight: 700;
+	color: var(--gray);
+}
+
+.mySubtitle{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	color: var(--main-color);
+}
+.projectThumbnail{
+	max-width: 100%;
+	display: block;
+	transition: all 0.3s ease-out;
+}
+
+.projectThumbnail:hover{
+	transition: all 0.3s ease-in;
+	/*opacity: 0.8;*/
+	transform:scale(1.05);
+}
+
+.content1of3{
+	border-radius: 2em;
+	-webkit-box-shadow: 0 5px 32px 2px rgba(0,0,0,0.2); 
+	box-shadow: 0 5px 32px 2px rgba(0,0,0,0.2);
+}
+
+.thumbnailCaption{
+	font-size: 0.7em;
+	max-width: 80%;
+	line-height: 1.8em;
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: var(--main-color);
+}
+
+.projectTitleCaption{
+	font-weight: 700;
+}
+
+.projectBanners{
+	max-width: 100%;
+}
+
+.screenshots{
+	max-width: 50%;
+}
+.footerText{
+	text-align: center;
+	font-size: 0.8em;
+	color: var(--main-color);
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.projSection{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 0.5em;
+	letter-spacing: 2px;
+	color: var(--main-color);
+}
+
+.myList{
+	padding: 0;
+}
+
+.nextList{
+	padding:0;
+}
+.listItems{
+	padding: 0 0 1.5em 0;
+	font-size: 0.7em;
+	font-weight: 700;
+	letter-spacing: 2px;
+	list-style: none;
+	color: var(--main-color);
+
+}
+
+.nextProject{
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-decoration: none;
+	line-height: 1.2em;
+}
+
+.nextProject:hover{
+	color: var(--sec-color);
+	transition: all 0.3s ease;
+}
+
+.nextProject:visited{
+	color: var(--sec-color);
+}
+
+.smallLinks{
+	display: block;
+	padding-bottom: 1em;
+	text-decoration: none;
+	font-size: 0.7em;
+	font-weight: 700;
+	color: var(--main-color);
+	letter-spacing: 2px;
+}
+.smallInfo{
+	display: block;
+	text-decoration: none;
+	font-size: 0.7em;
+	font-weight: 700;
+	color: var(--main-color);
+	letter-spacing: 2px;
+}
+
+.smallLinks:hover{
+	transition: all 0.3s ease;
+	color: var(--sec-color);
+}
+
+/*.smallLinks:visited{
+	color: var(--sec-color);
+}*/
+.spacer{
+	padding: 1em 0 1em 0;
+}
+
+.aboutPhoto{
+	width: calc(50% - 5rem);
+}
+
+.aboutText{
+	width: 50%;
+}
+
+.elSpacer{
+	padding-bottom: 0.5em;
+}
+
+
+.myPhoto{
+	max-width: 100%;
+}
+
+.myAboutText{
+	letter-spacing: 0.5px;
+	max-width: 70%;
+	font-size: 1em;
+	font-family: "Source Serif Pro", serif;
+	line-height: 1.4em;
+	color: var(--gray);
+}
+
+.content__item-decobar {
+	width: 140%;
+	height: 25%;
+	top: 20%;
+	left: -20%;
+	position: absolute;
+	background: #dd525a;
+	mix-blend-mode: color-burn;
+}
+
+
+/*=================PROJECT PAGES CSS=====================*/
+
+.projectHeaderContainer{
+	padding: 3em;
+	background: #5ce5bd;
+}
+
+.projectHero{
+	min-height: 50vh;
+	display: inline-block;
+	width: 100%;
+/*	display:flex;
+	justify-content: center; //horizontal centering
+	align-items:center; */
+}
+
+#projectTitle{
+	color: var(--gray);
+	text-align: center;
+	margin-top: 5em;
+	font-size: 2em;
+}
+
+#projectSubtitle{
+	color: var(--gray);
+	margin: 0 auto;
+	font-size: 0.9em;
+	letter-spacing: 1px;
+	font-family: "Source Serif Pro", serif;
+	max-width: 30%;
+	text-align: center;
+	line-height: 1.9em;
+}
+
+#illustration{
+	max-width: 30%;
+	position: absolute;
+	top: 40%;
+	left: 35%;
+}
+
+.overviewCard{
+	border-radius: 2em;
+	-webkit-box-shadow: 0 5px 32px 2px rgba(0,0,0,0.1); 
+	box-shadow: 0 5px 32px2px rgba(0,0,0,0.1);
+	margin: 0 auto;
+	margin-top: 15%;
+	padding: 3em;
+	max-width: 50%;
+}
+
+.subLabels{
+	text-transform: uppercase;
+	color: #aaa;
+	font-size: 0.9em;
+	font-weight: 800;
+}
+.labelDesc{
+	color: var(--gray);
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	line-height: 1.6em;
+}
+
+.secLabel{
+	margin-top: 5em;
+}
